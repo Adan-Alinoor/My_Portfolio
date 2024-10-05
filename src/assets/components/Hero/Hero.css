@@ -113,7 +113,8 @@ section {
   .hero-container {
     flex-direction: column; /* Stack items vertically */
     align-items: center;    /* Center all items */
-    text-align: center;     /* Center text for better alignment */
+    text-align: center;
+    height: auto;     /* Center text for better alignment */
     margin: 30px 5%; /* Adjust margins */
   }
 
@@ -124,18 +125,22 @@ section {
 
   .hero-title {
     font-size: 48px;       /* Reduce the title size on smaller screens */
-    margin-bottom: 15px;   /* Add some spacing below the title */
+    margin-bottom: 15px;
+    word-wrap: break-word;   /* Add some spacing below the title */
   }
 
   .hero-description {
     font-size: 18px;       /* Reduce the description font size */
     margin-bottom: 20px;   /* Add some spacing below the description */
-    padding: 0 15px;       /* Add padding for better readability on small screens */
+    padding: 0 15px; 
+    margin-right: 15px;       /* Add padding for better readability on small screens */
   }
 
   .contact-btn {
-    font-size: 20px;       /* Make the button slightly smaller */
-    padding: 12px 25px;  
+    font-size: 18px;       /* Make the button slightly smaller */
+    padding: 10px 20px; 
+    margin-right: 15px;    /* Add margin to keep button within view */
+    max-width: 90%; 
     
   }
    /* Hide the blur elements on smaller screens */
@@ -147,15 +152,18 @@ section {
 /* Further optimization for very small screens (e.g., mobile phones) */
 @media screen and (max-width: 480px) {
   .hero-title {
-    font-size: 36px;       /* Further reduce the title size for mobile */
+    font-size: 32px;       /* Further reduce the title size for mobile */
   }
 
   .hero-description {
-    font-size: 16px;       /* Make the description smaller on mobile */
+    font-size: 16px; 
+    margin-right: 10px;       /* Make the description smaller on mobile */
   }
 
   .contact-btn {
-    font-size: 18px;       /* Adjust button size for mobile */
+    font-size: 16px;
+    padding: 8px 15px;
+    margin-right: 10px;        /* Adjust button size for mobile */
   }
 
    /* Hide the blur elements on smaller screens */
