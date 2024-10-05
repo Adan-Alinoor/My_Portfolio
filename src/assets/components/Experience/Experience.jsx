@@ -6,7 +6,7 @@ import history from '../../Data/history.json'
 function Experience() {
   return (
     <section className='container' id='skills'>
-<h2 className='title'>Experience</h2>
+<h2 className='title'>Skills</h2>
 <div className='content'>
     <div className='skills' >
 {skills.map((skill,id)=>{
@@ -18,7 +18,7 @@ function Experience() {
     </div>
 })}
     </div>
-    <ul className='history'>
+    {/* <ul className='history'>
 {history.map((historyItem,id)=>{
     return <li className='historyItem' key={id}>
         <img src={historyItem.imageSrc} alt={`${historyItem.organisation} logo`}/>
@@ -33,7 +33,7 @@ function Experience() {
         </div>
     </li>
 })}
-    </ul>
+    </ul> */}
 </div>
 
     </section>
