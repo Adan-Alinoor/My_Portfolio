@@ -1,0 +1,112 @@
+.container{
+    position: relative;
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 15px;
+    padding: 73px;
+    margin-top: 129px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+    max-width: 100%;
+}
+.title{
+   
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+
+
+}
+/* .aboutImage{
+    width: 15%;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px; 
+
+}  */
+
+.aboutImage {
+    width: 100%; /* Make sure the image doesn't overflow */
+    max-width: 300px; /* Limit the maximum width */
+    height: auto; /* Keep the aspect ratio */
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.aboutItems{
+    color:#fff ;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 1;
+
+}
+.aboutItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    list-style: none;
+    padding: 25px;
+    background-image: linear-gradient(90deg rgba(165,215,232,0.42)0%,
+    rgba(255,255,255,0)100%);
+    /* background-size: 0 100%; */
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out;
+}
+
+.aboutItem:hover {
+    background-image: linear-gradient(90deg, rgba(165, 215, 232, 1) 0%, rgba(255, 255, 255, 0) 100%); /* Change to a more opaque gradient on hover */
+    /* color: #2c2c2c;  */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+.aboutItem h3{
+    font-size: 28px;
+    font-weight: 600;
+
+}
+.aboutItemText p.paragraph {
+    font-size: 24px !important; /* Change as needed */
+}
+
+
+
+@media screen and (max-width:830px) {
+    .container{
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column-reverse;
+    }
+    .content{
+        flex-direction: column;
+
+    }
+    .aboutImage{
+        display: none;
+    }
+    .aboutItems{
+        margin-top: 29px;
+    }
+    .aboutItem{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+.aboutImg{
+    height: 300px;
+}

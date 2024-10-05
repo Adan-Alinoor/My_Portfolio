@@ -1,0 +1,165 @@
+
+/* Base styling for larger screens */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 10%;
+  position: relative;
+  flex-wrap: wrap;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-img {
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  margin-right: 30px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-timing-function: ease-in-out;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-family: 'Roboto',Arial, Helvetica, sans-serif;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 120%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.emoji {
+  -webkit-text-fill-color: initial; /* Ensure emoji color is not affected by text styles */
+  background: none; /* Remove background gradient effect */
+  display: inline-block; /* Ensure it's aligned correctly */
+}
+
+.hero-description {
+  font-size: 24px;
+  font-family: 'Roboto',Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+}
+
+.contact-btn {
+  padding: 15px 30px;
+  font-size: 24px;
+  background-color: #576cbc;
+  color: white;
+  border-radius: 100px;
+  text-decoration: none;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
+  text-align: center;
+  font-weight:600 ;
+}
+
+.topBlur {
+  position: absolute;
+  width: 35vw; /* Reduce size */
+  height: 35vw; /* Reduce height */
+  min-height: 250px;
+  min-width: 250px; 
+  top: -100px; /* Adjust position */
+   left: 10vw;
+  border-radius: 50%; 
+   background: rgba(25, 55, 109, 0.7); 
+   filter: blur(80px); /* Reduce blur */
+   z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 50vw; /* Reduce size */
+  height: 40vw; /* Reduce height */
+  min-height: 250px;
+  min-width: 250px;
+  top: 250px; /* Adjust to fit */
+  right: -20vw; /* Adjust to prevent overflow */
+  border-radius: 50%;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(80px); /* Reduce blur */
+  z-index: 0;
+}
+
+
+ 
+
+/* Keyframes for floating effect */
+@keyframes floating {
+  0% { transform: translate(0, 0px); }
+  50% { transform: translate(0, 10px); }
+  100% { transform: translate(0, -0px); }
+}
+
+/* Responsive
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 830px) {
+  .hero-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center all items */
+    text-align: center;     /* Center text for better alignment */
+    margin: 30px 5%; /* Adjust margins */
+  }
+
+  .hero-img {
+    width: 80%;            /* Make the image larger and responsive */
+    margin: 0 0 20px 0;    /* Add margin to separate from the title */
+  }
+
+  .hero-title {
+    font-size: 48px;       /* Reduce the title size on smaller screens */
+    margin-bottom: 15px;   /* Add some spacing below the title */
+  }
+
+  .hero-description {
+    font-size: 18px;       /* Reduce the description font size */
+    margin-bottom: 20px;   /* Add some spacing below the description */
+    padding: 0 15px;       /* Add padding for better readability on small screens */
+  }
+
+  .contact-btn {
+    font-size: 20px;       /* Make the button slightly smaller */
+    padding: 12px 25px;  
+    
+  }
+   /* Hide the blur elements on smaller screens */
+   .topBlur, .bottomBlur {
+    display: none;
+  }
+}
+
+/* Further optimization for very small screens (e.g., mobile phones) */
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 36px;       /* Further reduce the title size for mobile */
+  }
+
+  .hero-description {
+    font-size: 16px;       /* Make the description smaller on mobile */
+  }
+
+  .contact-btn {
+    font-size: 18px;       /* Adjust button size for mobile */
+  }
+
+   /* Hide the blur elements on smaller screens */
+   .topBlur, .bottomBlur {
+    display: none;
+  }
+}

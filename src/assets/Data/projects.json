@@ -1,0 +1,18 @@
+[
+    {
+      "title": "Recipe Website",
+      "imageSrc": "/Assets/projects/recipes-BMb2Xq8a.jpg",
+      "description": "A fully functional recipe website with features like search, add to favorites and remove from favorites.",
+      "skills": ["React","Redux","Tailwind css"],
+      "demo": "https://thunderkitchen.netlify.app",
+      "source": "https://github.com/Mworia-Ian/React-food-recipe-app"
+     },
+    {
+      "title": "The Met Gallery",
+      "imageSrc": "/Assets/projects/WhatsApp Image 2024-10-04 at 2.52.54 PM.jpeg",
+      "description": "A platform allowing users to browse and purchase artworks, book art-related events, and make payments via the integrated M-Pesa API. It includes email verification during signup for added security.",
+      "skills": ["React", "Flask", "Postgres sql"],
+      "demo": "https://the-met-gallery-frontend.vercel.app/",
+      "source": "https://github.com/Adan-Alinoor/The-Met-Gallery-Frontend"
+    }
+  ]

@@ -1,0 +1,10 @@
+[
+    {
+      "role": "Full Stack Developer",
+      "organisation": "Moringa School",
+      "startDate": "Aug, 2024",
+      "endDate": "",
+      "experiences": ["Led a team in developing and maintaining web applications using JavaScript, React.js, and Flask. Implemented RESTful APIs and integrated with Postgres databases. Collaborated with stakeholders to define project requirements and timelines."],
+      "imageSrc": "/Assets/Skills/moringaicon.png"
+    }
+]
