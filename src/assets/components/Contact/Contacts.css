@@ -41,7 +41,7 @@ letter-spacing: 4px;
     letter-spacing:1.5px ;
 }
 
-@media screen and (max-width:830px) {
+/* @media screen and (max-width:830px) {
     .footerContainer{
         flex-direction: column;
         gap: 23px;
@@ -53,7 +53,64 @@ letter-spacing: 4px;
     }
     .footerLinks{
         align-items: center;
-        
     }
     
-}
+} */
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 830px) {
+    .footerContainer {
+      flex-direction: column;
+      gap: 23px;
+      text-align: center;
+      padding: 40px 5%;
+    }
+  
+    .footerText {
+      text-align: center;
+    }
+  
+    .footerText h2 {
+      font-size: 50px;  /* Reduce size for smaller screens */
+    }
+  
+    .footerText p {
+      font-size: 24px;  /* Reduce size for smaller screens */
+    }
+  
+    .footerLinks {
+      align-items: center;
+      width: 100%; /* Ensure links take up full width */
+    }
+  
+    .footerLink {
+      justify-content: center;
+      width: 100%; /* Ensure the link doesn't exceed screen width */
+    }
+  
+    .footerLink img {
+      width: 25px;  /* Further reduce icon size on smaller screens */
+      height: 25px;
+    }
+  
+    .footerLink a {
+      font-size: 20px;  /* Reduce font size for smaller screens */
+      word-wrap: break-word;  /* Wrap text if needed */
+    }
+  }
+  
+  /* Extra Small Screens (e.g., mobile phones) */
+  @media screen and (max-width: 480px) {
+    .footerText h2 {
+      font-size: 32px;  /* Further reduce heading size */
+    }
+  
+    .footerText p {
+      font-size: 18px;
+    }
+  
+    .footerLink a {
+      font-size: 18px;
+      margin: 0 10px;  /* Add margin to ensure proper alignment */
+    }
+  }
